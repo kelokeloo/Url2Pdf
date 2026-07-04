@@ -26,6 +26,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".PdfPreviewActivity"
+            android:exported="false"
+            android:label="预览 PDF"
+            android:theme="@style/Theme.Url2Pdf" />
+
+        <provider
+            android:name=".PdfShareProvider"
+            android:authorities="com.kelokeloo.url2pdf.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
     </application>
 
 </manifest>

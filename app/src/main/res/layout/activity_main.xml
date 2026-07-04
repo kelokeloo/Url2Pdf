@@ -40,9 +40,28 @@
         android:layout_marginBottom="12dp"
         android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/exportPdfButton"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="导出为 PDF" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exportPdfButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E5E7EB"
+            android:text="保存"
+            android:textColor="#111827" />
+
+        <Button
+            android:id="@+id/sharePdfButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1.6"
+            android:backgroundTint="#2563EB"
+            android:text="分享 PDF"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 </LinearLayout>
